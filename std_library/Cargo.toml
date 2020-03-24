@@ -1,0 +1,13 @@
+[package]
+name = "std_library"
+version = "0.1.0"
+authors = ["leo60228 <iakornfeld@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate_type = ["staticlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sunrise-libuser = { path = "../libuser", default-features = false, features = ["build-for-std-app"] }
